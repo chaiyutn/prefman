@@ -85,10 +85,9 @@ public class User {
 }
 ```
 
-Download
+Download[ ![Download](https://api.bintray.com/packages/chongos/maven/prefman/images/download.svg) ](https://bintray.com/chongos/maven/prefman/_latestVersion)
 --------
 
-[ ![Download](https://api.bintray.com/packages/chongos/maven/prefman/images/download.svg) ](https://bintray.com/chongos/maven/prefman/_latestVersion)
 ```groovy
 dependencies {
   compile 'com.chongos:prefman:${latest.version}'

@@ -40,8 +40,18 @@ Observable<Boolean> observableBooleanValue = getterBooleanValue.asObservable(); 
 // remove method
 prefManager.removeBooleanValue(); 
 ```
+### Default value
+You can define default value to field
+```java
+@PrefMan
+class MyPreference {
 
-You can change the default value
+    // define default value
+    int intValue = 100;
+    ...
+}
+```
+OR
 ```java
 MyPreference myPref = new MyPreference();
 
@@ -52,7 +62,7 @@ MyPreferenceManager manager = MyPreferenceManager.getManager(this, myPref);
 ...
 ```
 
-
+### Naming
 By default, Prefman uses the class name as the shared preference name. If you want the shared preference to have a different name, set the `name` property of the `@PrefMan` annotation, as shown in the following code snippet:
 
 ```java
@@ -61,7 +71,7 @@ class MyPreference {
    ...
 }
 ```
-or
+OR
 ```java
 MyPreferenceManager manager = MyPreferenceManager.getManager(context, "MyPref");
 ```
@@ -74,12 +84,13 @@ class MyPreference {
    ...
 }
 ```
-or
+OR
 ```java
 MyPreferenceManager manager = MyPreferenceManager.getManager(context, "MyPref", Context.MODE_PRIVATE);
 ```
 
-### Model
+Model
+--------
 You can use your model class with **`@PrefModel`**
 
 By default, Prefman creates a column for each field that's defined in the model. If an model has fields that you don't want to persist, you can annotate them using `@Ignore`
@@ -105,7 +116,7 @@ class MyPreference {
 }
 ```
 
-#### Nested
+### Nested
 ```java
 @PrefModel
 class Address {

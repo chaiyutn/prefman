@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        consumerProguardFiles 'proguard-rules.txt'
+    }
+
+    compileOptions {
+        sourceCompatibility versions.sourceCompatibility
+        targetCompatibility versions.sourceCompatibility
+    }
+}
+
+dependencies {
+    api project(path: ':prefman-annotations')
+    implementation "io.reactivex.rxjava2:rxjava:2.1.1"
+}
+
+publish {
+    userOrg = USER
+    groupId = GROUP_ID
+    artifactId = ARTIFACT_ID_LIBRARY
+    version = VERSION
+    desc = DESCRIPTION
+    website = WEBSITE
+    licences = LICENCES
+}

@@ -1,0 +1,6 @@
+include ':app'
+include ':prefman'
+include ':prefman-compiler'
+include ':prefman-annotations'
+
+rootProject.name = 'prefman-parent'

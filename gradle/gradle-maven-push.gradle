@@ -1,0 +1,26 @@
+ext {
+    bintrayRepo = 'PrefMan'
+    bintrayName = 'pref-man'
+
+    publishedGroupId = 'com.chongos'
+    libraryName = 'PrefMan'
+    artifact = 'pref-man'
+
+    libraryDescription = 'AndroidAnnotations for generate SharedPreferences'
+
+    siteUrl = 'https://github.com/Chong-OS/PrefMan'
+    gitUrl = 'https://github.com/Chong-OS/PrefMan.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'chongos'
+    developerName = 'Chaiyut Nacharoen'
+    developerEmail = 'chaiyut.na@gmail.com'
+
+    licenseName = 'MIT License'
+    licenseUrl = 'https://github.com/Chong-OS/PrefMan/blob/master/LICENSE'
+    allLicenses = ["MIT"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

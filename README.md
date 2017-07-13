@@ -141,8 +141,8 @@ Download  [ ![Download](https://api.bintray.com/packages/chongos/maven/prefman/i
 
 ```groovy
 dependencies {
-  compile 'com.chongos:prefman:${latest.version}'
-  annotationProcessor 'com.chongos:prefman-compiler:${latest.version}'
+  compile "com.chongos:prefman:${latest.version}"
+  annotationProcessor "com.chongos:prefman-compiler:${latest.version}"
 }
 ```
 

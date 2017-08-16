@@ -135,7 +135,7 @@ internal class PrefManWriter(private val prefName: String,
     }
 
     private fun createPutMethod(field: Field): MethodSpec {
-        val builder = MethodSpec.methodBuilder("put${field.name}")
+        val builder = MethodSpec.methodBuilder("put${field.name.capitalize()}")
                 .addModifiers(Modifier.PUBLIC)
                 .returns(Void.TYPE)
                 .addParameter(TypeName.get(field.element.asType()), field.element.toString())

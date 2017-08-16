@@ -17,8 +17,8 @@ android {
 }
 
 dependencies {
-    api project(path: ':prefman-annotations')
-    implementation "io.reactivex.rxjava2:rxjava:2.1.1"
+    compile project(':prefman-annotations')
+    compile "io.reactivex.rxjava2:rxjava:2.1.2"
 }
 
 publish {
